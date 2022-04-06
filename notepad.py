@@ -1,14 +1,6 @@
 import numpy as np
 
-# a = np.arange(15).reshape(3, 5)
-# print(a)
+a = np.arange(6).reshape(2, 3)
+a = np.power(a, 2)
+print(np.min(np.sum(a, axis=1)/3))
 
-# b = np.arange(5)
-# print(b)
-
-# print(np.power(b, np.arange(len(b))));
-
-n = 4
-b = np.zeros([n, 1])
-
-print(b)
