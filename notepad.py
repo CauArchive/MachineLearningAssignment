@@ -1,8 +1,13 @@
 import numpy as np
 
-# a = np.arange(6).reshape(2, 3)
-# a = np.power(a, 2)
-# print(np.min(np.sum(a, axis=1)/3))
-
-a = np.eye(4)
-print(a)
+p = 3
+x = [1,2,3,4,5,6,7,8]
+n = len(x)
+A = np.zeros([n, p])
+for i in range(p):
+  A[:,i] = x
+print(A)
+A = np.power(A,np.arange(p))
+print(A)
+# result = np.power(x, np.arange(p))
+# print(result)
