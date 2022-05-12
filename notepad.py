@@ -11,8 +11,8 @@ import numpy as np
 # C = B * A
 # print(C)
 
-
-K = np.array([1, 2, 10])
-L = np.array([1, 2, 3])
-M = K * L
-print(1 - K)
+theta = np.array([-0.02809329,  0.36071584, -0.4335038])
+# point = np.array([1., -20., -20.])
+point = np.array([[1., -20., -20.],
+                  [1., -20., -20.]])
+print(theta @ point.T)
