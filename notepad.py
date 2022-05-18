@@ -11,8 +11,13 @@ import numpy as np
 # C = B * A
 # print(C)
 
-theta = np.array([2,  1, 3])
-print(theta.shape)
-point = np.array([[1., -20., -20.],
-                  [1., -20., -20.]])
-print(theta * point)
+
+def something(x):
+    print(x.shape)
+
+
+theta = np.array([[2,  1, 3]]).T
+something(theta)
+# point = np.array([[1., -20., -20.],
+#                   [1., -20., -20.]])
+# print(theta * point)
